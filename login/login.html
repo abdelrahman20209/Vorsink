@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vorsink | Log-in Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/logo-brwoser.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/logo-brwoser.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/android-chrome-512x512.png"
+    />
+
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="theme-color" content="#ffb907" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="../img/Vorsink.png" alt="Makeit Logo" />
+      </a>
+      <nav class="nav">
+        <a href="../VORSINK.Home/index.html">Back-to-Home</a>
+      </nav>
+    </header>
+
+    <main class="login-container">
+      <div class="login-card">
+        <div class="form-header">
+          <h2>Log-in to <b class="Makeit">Vorsink</b></h2>
+          <p>Login to your <b class="Makeit">Vorsink</b> account</p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div class="form-options">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+
+          <button
+            type="button"
+            class="btn-main"
+            id="loginBtn"
+            style="width: 100%"
+          >
+            Log In
+          </button>
+
+          <p class="signup-text">
+            Don't have an account? <a href="../sign-up/sign-in.html">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="login.js"></script>
+  </body>
+</html>

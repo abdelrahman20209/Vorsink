@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #ffb907;
+  --dark-grey: #333333;
+  --light-grey: #f8f9fa;
+  --white: #ffffff;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--white);
+  color: var(--dark-grey);
+  overflow: hidden;
+}
+
+header {
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--dark-grey);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.nav a:hover {
+  color: var(--primary-color);
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.form-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.form-header p b {
+  color: var(--primary-color);
+}
+
+.Makeit{
+    color: #ffb907;
+    font-family: a;
+}
+.login-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: var(--transition);
+}
+
+.input-group input:focus {
+  border-color: var(--primary-color);
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.role-label {
+  text-align: left;
+  font-size: 0.85rem;
+  color: #666;
+  margin: 10px 0 5px;
+}
+
+.role-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.role-box {
+  flex: 1;
+  padding: 15px 5px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: var(--white);
+}
+
+.role-box i {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.role-box span {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.role-box:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary-color);
+}
+
+.btn-main {
+  width: 100%;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-main:hover {
+  background: var(--dark-grey);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signup-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.signup-text a {
+
+  font-weight: 700;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.forgot-link{
+      color: var(--primary-color);
+  text-decoration: none;
+}

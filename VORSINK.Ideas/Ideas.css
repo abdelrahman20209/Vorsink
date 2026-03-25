@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #ffb907;
+  --dark-grey: #333333;
+  --light-grey: #f8f9fa;
+  --white: #ffffff;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--white);
+  color: var(--dark-grey);
+  line-height: 1.6;
+  background-attachment: fixed;
+  position: relative;
+  background-color: #ffffff; 
+}
+
+header {
+  background-color: var(--white);
+  padding: 1.5rem 5%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--dark-grey);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav a:hover {
+  color: var(--primary-color);
+}
+.hero-container {
+    display: flex;
+    flex-direction: column; /* يرتبهم فوق بعض */
+    align-items: center;    /* يوسطهم كلهم في النص */
+    width: 100%;
+    margin-top: 50px;
+}
+
+.welcom {
+    font-size: 70px;
+    margin-bottom: 5px; /* مسافة بسيطة تحتها */
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    display: flex;
+    justify-content: center;/* استخدمنا الخط اللي اخترناه */
+}
+
+
+.welcom-slogan {
+    font-size: 1.5rem;
+    color: #ffb907;
+    font-weight: bold;
+    text-align: center;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.main-overlay {
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; 
+}
+
+.content {
+    text-align: center;
+}
+
+.logo {
+    width: 140px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px rgba(255, 204, 0, 0.3));
+}
+
+.brand {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 12px;
+    margin: 0;
+    color: #fff;
+    text-indent: 12px;
+}
+
+p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+p b { color: #FFCC00; }
+h1 , p , .welcom{
+  font-family: a;
+}
